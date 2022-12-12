@@ -1,0 +1,65 @@
+<h1>
+  Hello admin <br />
+  View the status of your agents and evolution of their latest alerts
+</h1>
+<h2>Installed agents by their status</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Total agents</h1>
+      <div class="total">{{ countAgents?.total }}</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>Active agents</h1>
+      <div class="active">{{ countAgents?.Active_agents }}</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>Disconnected agents</h1>
+      <div class="disconnected">{{ countAgents?.Disconnected_agents }}</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>Pending agents</h1>
+      <div class="pending">{{ countAgents?.Pending_agents }}</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>Never connected agents</h1>
+      <div class="never">{{ countAgents?.Neverconnected_agents }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="column" *ngFor="let items of countAgents | keyvalue">
+  <div class="row">
+    <div class="card">
+      {{ items.key }}<br />
+      <h2
+        [ngStyle]="{
+          color:
+            items.key === 'Total agents'
+              ? 'rgb(0, 107, 180)'
+              : items.key === 'Active agents'
+              ? 'rgb(0, 120, 113)'
+              : items.key === 'Disconnected agents'
+              ? 'rgb(189, 39, 30)'
+              : items.key === 'Pending agents'
+              ? 'rgb(254, 197, 20)'
+              : items.key === 'Never connected agents'
+              ? 'rgb(100, 106, 119)'
+              : ''
+        }"
+      >
+        {{ items.value }}
+      </h2>
+    </div>
+  </div>
+</div>
+ -->

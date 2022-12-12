@@ -1,0 +1,50 @@
+.column {
+  width: 9%;
+  justify-content: space-around;
+}
+
+.row {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+.total {
+  color: rgb(0, 107, 180);
+  font-size: x-large;
+}
+.active {
+  color: rgb(0, 120, 113);
+  font-size: x-large;
+}
+.disconnected {
+  color: rgb(189, 39, 30);
+  font-size: x-large;
+}
+.pending {
+  color: rgb(254, 197, 20);
+  font-size: x-large;
+}
+.never {
+  color: rgb(100, 106, 119);
+  font-size: x-large;
+}
+
+h1 {
+  font-size: small;
+  font-weight: 250;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+h2 {
+  font-size: medium;
+  margin-top: 2%;
+  margin-left: 1%;
+}
